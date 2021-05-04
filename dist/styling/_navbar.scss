@@ -1,0 +1,58 @@
+.nav-container {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+  height: 10vh;
+}
+
+.nav-logo {
+  grid-area: 1 / 1 / 2 / 2;
+  background: url(../imgs/logo-info.png) no-repeat center;
+  background-size: contain;
+  width: 20vh;
+  height: 10vh;
+  img {
+    height: inherit;
+  }
+}
+
+.nav-menu {
+  grid-area: 1 / 2 / 2 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  width: 100%;
+  li {
+    position: relative;
+    padding: 2rem;
+    a {
+      font-size: 1.75rem;
+      color: black;
+      text-decoration: none;
+      outline: none;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        outline: initial;
+        color: white;
+      }
+    }
+  }
+}
+
+.active a {
+  color: white;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  background: url(../imgs/nav-van.jpg) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+}

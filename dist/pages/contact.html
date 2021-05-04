@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styling/styles.css" />
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Descubrit / VANLIFE</title>
+  </head>
+
+  <body>
+    <div class="full-grid-container">
+      <header>
+        <nav class="nav-container">
+          <div class="nav-logo"></div>
+          <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">Van Life</a></li>
+            <li><a href="./build.html">Camper bouwen</a></li>
+            <li><a href="./experience.html">Ervaringen</a></li>
+            <li><a class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="main-grid-container">
+          <section class="main-display">
+            <h1>DESCUBRIT</h1>
+            <h2>Exploring the world</h2>
+          </section>
+          <div class="contact-container">
+            <form name="contact" method="POST" data-netlify="true">
+              <label for="name"></label>
+              <input class="width-half" type="text" name="name" placeholder="Naam..." />
+
+              <label for="email"></label>
+              <input class="width-half" type="email" name="email" placeholder="E-mail..." />
+
+              <label for="number"></label>
+              <input type="number" name="number" placeholder="Nummer..." />
+
+              <label for="textarea"></label>
+              <textarea rows="8" cols="auto" placeholder="Vraag..."></textarea>
+
+              <label for="submit"></label>
+              <input
+                class="submit"
+                type="submit"
+                name="submit"
+                onclick="alert(`Dankjewel!`)"
+                value="Verstuur"
+              />
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-info">
+          <p>Copyright © 2021 Dennis Sweeris</p>
+        </div>
+        <ul>
+          <li>
+            <a href="https://linkedin.com/DennisSweeris" target="_blank" rel="noreferrer">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/DennisSweeris" target="_blank" rel="noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

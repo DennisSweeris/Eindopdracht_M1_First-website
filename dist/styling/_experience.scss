@@ -1,0 +1,38 @@
+.article-wrapper-experience {
+  grid-area: 2 / 1 /2 /-1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-content: flex-start;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.experience-text {
+  margin: 0 auto;
+  font-size: 2rem;
+  width: 75%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.article-experience-column-one {
+  background: rgb(219, 224, 185);
+}
+
+.article-experience-column-two {
+  background: rgb(169, 182, 88);
+}
+
+.article-experience-column-one,
+.article-experience-column-two {
+  display: flex;
+  flex-wrap: wrap;
+  width: 49%;
+  height: 50%;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-bottom: 0;
+  text-align: center;
+}

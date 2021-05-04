@@ -1,0 +1,36 @@
+.contact-container {
+  grid-area: 2 / 1 / 3 / 4;
+  margin: 0 auto;
+  form {
+    margin-top: 1rem;
+    display: grid;
+    grid-area: 2 /1/3/4;
+    width: 50vw;
+    input {
+      background: rgba(168, 181, 86, 0.5);
+      padding: 1rem;
+      border: none;
+      outline: none;
+      &:focus {
+        background: rgb(255, 255, 255, 0.5);
+      }
+    }
+    textarea {
+      background: rgba(168, 181, 86, 0.5);
+      border: none;
+      outline: none;
+      resize: none;
+      padding: 1rem;
+      &:focus {
+        background: rgb(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+.submit {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 25%;
+  cursor: pointer;
+}
